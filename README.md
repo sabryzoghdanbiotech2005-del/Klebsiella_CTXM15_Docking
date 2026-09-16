@@ -31,7 +31,7 @@ AMRFinderPlus identified 14 AMR determinants:
 
 ## Genetic Context of blaCTX-M-15
 - Located on plasmid CP129404.1 (317,772 bp)
-- Position: 241,865–242,737
+- Position: 241,865-242,737
 - No transposase or insertion sequence identified in the surrounding region
 - Flanked by plasmid-associated genes (ssb_2, psiB), suggesting a conjugative plasmid
 

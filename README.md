@@ -22,16 +22,16 @@ AMRFinderPlus identified 14 AMR determinants:
 
 ### Plasmid (10 genes)
 - aph(6)-Id, aph(3'')-Ib (aminoglycoside)
-- sul2 (sulfonamide) — partial
+- sul2 (sulfonamide) - partial
 - dfrA14, dfrA50 (trimethoprim)
 - blaTEM-1, blaSCO-1 (β-lactam)
 - qnrB1 (quinolone)
-- tet(A) (tetracycline) — partial
+- tet(A) (tetracycline) - partial
 - **blaCTX-M-15 (β-lactam/cephalosporin)**
 
 ## Genetic Context of blaCTX-M-15
 - Located on plasmid CP129404.1 (317,772 bp)
-- Position: 241,865–242,737
+- Position: 241,865-242,737
 - No transposase or insertion sequence identified in the surrounding region
 - Flanked by plasmid-associated genes (ssb_2, psiB), suggesting a conjugative plasmid
 

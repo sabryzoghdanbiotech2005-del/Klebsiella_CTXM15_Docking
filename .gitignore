@@ -1,0 +1,23 @@
+# Ignore unnecessary files
+4HBU.pdb
+xr3_*.pdb
+xr3_*.pdbqt
+config_redock_*.txt
+avibactam_original.pdb
+avibactam_original.pdbqt
+avibactam_redocked.pdbqt
+avibactam.pdbqt
+clavulanic.pdbqt
+meropenem.pdbqt
+tazobactam.pdbqt
+8r30_clean.pdbqt
+8r30_receptor.pdbqt
+"Klebsiella pneumoniae.fasta"
+"Plasmid Klebsiella pneumoniae.fasta"
+"Plasmid Klebsiella pneumoniae.fasta.fai"
+klebsiella_complete.fasta
+ctxm15.fasta
+amrfinder_full.tsv
+*.pyc
+__pycache__/
+.DS_Store

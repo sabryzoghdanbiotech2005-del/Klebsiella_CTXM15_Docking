@@ -22,11 +22,11 @@ AMRFinderPlus identified 14 AMR determinants:
 
 ### Plasmid (10 genes)
 - aph(6)-Id, aph(3'')-Ib (aminoglycoside)
-- sul2 (sulfonamide) — partial
+- sul2 (sulfonamide) - partial
 - dfrA14, dfrA50 (trimethoprim)
 - blaTEM-1, blaSCO-1 (β-lactam)
 - qnrB1 (quinolone)
-- tet(A) (tetracycline) — partial
+- tet(A) (tetracycline) - partial
 - **blaCTX-M-15 (β-lactam/cephalosporin)**
 
 ## Genetic Context of blaCTX-M-15

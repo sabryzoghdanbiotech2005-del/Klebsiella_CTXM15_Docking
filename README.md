@@ -27,4 +27,4 @@ In silico analysis of CTX-M-15 β-lactamase from Klebsiella pneumoniae.
 - AutoDock Vina
 
 ## Author
-[Sabry Ali Zoghdan]
+Sabry Ali Zoghdan

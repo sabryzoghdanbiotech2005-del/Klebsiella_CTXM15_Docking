@@ -42,17 +42,19 @@ CTX-M-15 is an extended-spectrum β-lactamase (ESBL) that confers resistance to 
 - **Tools:** PyMOL + OpenBabel
 - Removed water, native ligand (XR3), and ions
 
-### 2.6 Molecular Docking
+### 2.6 Molecular Docking (Preliminary)
 - **Tool:** AutoDock Vina
 - **Ligands:** Avibactam, Clavulanic acid, Tazobactam, Meropenem
 - **Grid:** Center (-8.41, -2.76, 10.05), Size (25×25×25 Å)
 
 ### 2.7 Covalent Redocking Validation
 - **Tool:** GalaxyCDock2-DL
-- **Receptor:** 4HBU (CTX-M-15 with Avibactam)
-- **Ligand:** Avibactam
-- **Covalent residue:** SER70 (OG)
-- **Result:** RMSD = 0.83 Å
+- **Reference Ligand:** Avibactam (NXL) from PDB 4HBU
+- **Receptor:** 4HBU (CTX-M-15)
+- **Covalent Bond:** Avibactam C — Ser70 OG
+- **Binding Mode:** Covalent
+- **RMSD (heavy atoms):** 0.83 Å
+- **Score:** 5.549 (GalaxyCDock2-DL)
 
 ---
 
@@ -60,22 +62,11 @@ CTX-M-15 is an extended-spectrum β-lactamase (ESBL) that confers resistance to 
 
 ### 3.1 AMR Profile
 
-| Gene | Class | Location | Coverage | Identity |
-|------|-------|----------|----------|----------|
-| blaCTX-M-15 | β-lactam | Plasmid | 100% | 100% |
-| blaTEM-1 | β-lactam | Plasmid | 100% | 100% |
-| blaSHV-75 | β-lactam | Chromosome | 100% | 100% |
-| blaSCO-1 | β-lactam | Plasmid | 100% | 100% |
-| dfrA14 | Trimethoprim | Plasmid | 100% | 100% |
-| dfrA50 | Trimethoprim | Plasmid | 100% | 98.73% |
-| sul2 | Sulfonamide | Plasmid | 77.49% | 98.10% |
-| tet(A) | Tetracycline | Plasmid | 61.40% | 91.43% |
-| qnrB1 | Quinolone | Plasmid | 100% | 100% |
-| aph(6)-Id | Aminoglycoside | Plasmid | 100% | 100% |
-| aph(3'')-Ib | Aminoglycoside | Plasmid | 100% | 100% |
-| oqxA | Efflux | Chromosome | 100% | 100% |
-| oqxB14 | Efflux | Chromosome | 100% | 100% |
-| fosA | Fosfomycin | Chromosome | 100% | 100% |
+AMRFinderPlus identified 14 AMR determinants:
+- **Chromosome (4):** oqxA, oqxB14, fosA, blaSHV-75
+- **Plasmid (10):** aph(6)-Id, aph(3'')-Ib, sul2, dfrA14, blaTEM-1, qnrB1, tet(A), blaSCO-1, dfrA50, blaCTX-M-15
+
+Note: sul2 (77.49% coverage) and tet(A) (61.40% coverage) were classified as partial hits.
 
 ### 3.2 Genetic Context of blaCTX-M-15
 - Located on plasmid CP129404.1 (317,772 bp)
@@ -84,7 +75,7 @@ CTX-M-15 is an extended-spectrum β-lactamase (ESBL) that confers resistance to 
 - No transposase or insertion sequence detected in the vicinity
 - Plasmid-associated genes (ssb_2, psiB) present
 
-### 3.3 Docking Results
+### 3.3 Preliminary Docking Results (Vina)
 
 | Ligand | Binding Affinity (kcal/mol) |
 |--------|----------------------------|
@@ -93,18 +84,34 @@ CTX-M-15 is an extended-spectrum β-lactamase (ESBL) that confers resistance to 
 | Clavulanic acid | -7.6 |
 | Tazobactam | -7.5 |
 
+**Note:** These are preliminary results. Meropenem showed the highest docking score, consistent with its role as a substrate rather than a mechanism-based inhibitor.
+
 ### 3.4 Covalent Redocking Validation
 
 | Parameter | Value |
 |-----------|-------|
 | Tool | GalaxyCDock2-DL |
-| Ligand | Avibactam |
-| Receptor | 4HBU |
-| Covalent Residue | SER70 |
-| RMSD | 0.83 Å |
-| Score | 5.549 |
+| Reference Ligand | Avibactam (NXL) from 4HBU |
+| Receptor | 4HBU (CTX-M-15) |
+| Covalent Bond | Avibactam C — Ser70 OG |
+| Binding Mode | Covalent |
+| RMSD (heavy atoms) | 0.83 Å |
+| Score | 5.549 (GalaxyCDock2-DL) |
 
-**Interpretation:** RMSD < 2.0 Å confirms the validity of the docking protocol.
+**Interpretation:** Re-docking of avibactam reproduced the crystallographic binding mode with an RMSD of 0.83 Å (heavy atoms). This is below the 2.0 Å threshold commonly used for docking validation.
+
+### 3.5 Cross-Structure Consistency Check
+
+A second docking run was performed on 4HBU (CTX-M-15 from *E. coli*). Results are shown below:
+
+| Ligand | 8R30 (kcal/mol) | 4HBU (kcal/mol) |
+|--------|------------------|------------------|
+| Avibactam | -8.1 | -6.8 |
+| Clavulanic acid | -7.6 | -6.1 |
+| Tazobactam | -7.5 | -6.4 |
+| Meropenem | -9.5 | -6.5 |
+
+**Note:** This is a consistency check, not a validation. The ranking of ligands differed between 8R30 and 4HBU, which may reflect differences in pocket geometry, protonation states, or grid box placement.
 
 ---
 
@@ -113,22 +120,35 @@ CTX-M-15 is an extended-spectrum β-lactamase (ESBL) that confers resistance to 
 ### 4.1 AMR Profile
 The isolate carries 14 AMR determinants, including the clinically critical *bla*CTX-M-15. The presence of multiple β-lactamases (CTX-M-15, TEM-1, SHV-75, SCO-1) indicates a multidrug-resistant phenotype.
 
-### 4.2 Genetic Context
+### 4.2 Prokka vs AMRFinderPlus: A Key Observation
+
+Prokka initially annotated the gene as **CTX-M-1**, while AMRFinderPlus identified it as **CTX-M-15**. BLAST validation confirmed the latter (100% identity to CTX-M-15).
+
+This highlights the importance of using specialized tools for AMR detection. General annotation tools (like Prokka) may misclassify closely related alleles.
+
+### 4.3 Genetic Context
 The absence of a transposase immediately upstream of *bla*CTX-M-15 suggests that the gene is stably integrated into the plasmid rather than being part of a mobile transposon. However, the plasmid itself is conjugative (ssb_2, psiB), facilitating horizontal transfer.
 
-### 4.3 Docking Results
-- **Meropenem** showed the highest affinity (-9.5 kcal/mol) but is a substrate, not an inhibitor.
-- **Avibactam** showed the strongest binding among inhibitors (-8.1 kcal/mol), consistent with its known efficacy.
-- **Clavulanic acid** (-7.6) and **Tazobactam** (-7.5) showed moderate binding.
+### 4.4 Docking Results
+- **Meropenem** showed the highest docking score but is a substrate, not an inhibitor.
+- **Avibactam** showed the strongest binding among inhibitors, consistent with its known efficacy.
+- **Clavulanic acid** and **Tazobactam** showed moderate binding.
 
-### 4.4 Covalent Redocking
-The RMSD of 0.83 Å confirms that the docking protocol is accurate for covalent inhibitors. This validates the docking results and supports the interpretation that Avibactam is the most effective inhibitor among those tested.
+### 4.5 Covalent Redocking Validation
+The RMSD of 0.83 Å confirms that the covalent docking protocol is accurate for Avibactam. This validates the docking approach for covalent inhibitors.
+
+### 4.6 Limitations
+- The consistency check between 8R30 and 4HBU showed different rankings, which may reflect structural differences between the two crystal structures.
+- Only Avibactam has a reference crystal pose; Clavulanic acid and Tazobactam do not have crystal structures with CTX-M-15.
+- Docking results are preliminary and should be interpreted with caution.
 
 ---
 
 ## 5. Conclusion
 
-This study provides a comprehensive in silico analysis of a clinical *Klebsiella pneumoniae* isolate harboring *bla*CTX-M-15. The combination of genome annotation, AMR detection, BLAST validation, and molecular docking (validated by covalent re-docking) provides a robust framework for understanding and targeting CTX-M-15.
+This study provides a comprehensive in silico analysis of a clinical *Klebsiella pneumoniae* isolate harboring *bla*CTX-M-15. The combination of genome annotation, AMR detection, BLAST validation, and molecular docking (with covalent re-docking validation) provides a robust framework for understanding and targeting CTX-M-15.
+
+The key finding is the discrepancy between Prokka (CTX-M-1) and AMRFinderPlus (CTX-M-15), emphasizing the need for specialized tools in AMR detection.
 
 ---
 

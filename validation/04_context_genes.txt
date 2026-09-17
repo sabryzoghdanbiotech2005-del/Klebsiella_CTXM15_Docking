@@ -1,0 +1,25 @@
+236136	236339	+	ID=KPLB_00227;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_00227;product=hypothetical protein
+236351	237307	+	ID=KPLB_00228;eC_number=3.6.5.-;Name=yjiA;db_xref=COG:COG0523;gene=yjiA;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P24203;locus_tag=KPLB_00228;product=Zinc chaperone YjiA
+237699	238244	+	ID=KPLB_00229;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_00229;product=hypothetical protein
+238342	239712	-	ID=KPLB_00230;eC_number=1.2.1.16;Name=sad_1;db_xref=COG:COG1012;gene=sad_1;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P76149;locus_tag=KPLB_00230;product=Succinate semialdehyde dehydrogenase [NAD(P)+] Sad
+239871	240821	-	ID=KPLB_00231;eC_number=3.1.21.-;Name=rpnA_2;db_xref=COG:COG5464;gene=rpnA_2;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P31667;locus_tag=KPLB_00231;product=Recombination-promoting nuclease RpnA
+241037	241852	+	ID=KPLB_00232;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_00232;product=hypothetical protein
+241900	242562	+	ID=KPLB_00233;Name=rhtC_1;db_xref=COG:COG1280;gene=rhtC_1;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P0AG38;locus_tag=KPLB_00233;product=Threonine efflux protein
+242555	243847	+	ID=KPLB_00234;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_00234;product=hypothetical protein
+243901	245142	+	ID=KPLB_00235;Name=mdtM_1;db_xref=COG:COG2814;gene=mdtM_1;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P39386;locus_tag=KPLB_00235;product=Multidrug resistance protein MdtM
+245168	245407	+	ID=KPLB_00236;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_00236;product=hypothetical protein
+245505	246656	+	ID=KPLB_00237;eC_number=4.2.1.175;Name=fldC;gene=fldC;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:Q93AL8;locus_tag=KPLB_00237;product=(R)-phenyllactyl-CoA dehydratase beta subunit
+236666	238174	+	ID=KPLB_05230;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05230;product=hypothetical protein
+239103	239327	-	ID=KPLB_05231;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05231;product=hypothetical protein
+239309	239455	-	ID=KPLB_05232;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05232;product=hypothetical protein
+239455	239670	-	ID=KPLB_05233;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05233;product=hypothetical protein
+239667	239915	-	ID=KPLB_05234;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05234;product=hypothetical protein
+240347	241609	+	ID=KPLB_05235;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05235;product=hypothetical protein
+241590	241712	+	ID=KPLB_05236;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05236;product=hypothetical protein
+241865	242740	+	ID=KPLB_05237;eC_number=3.5.2.6;Name=bla_3;gene=bla_3;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P28585;locus_tag=KPLB_05237;product=Beta-lactamase CTX-M-1
+242754	243074	+	ID=KPLB_05238;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05238;product=hypothetical protein
+243697	244239	+	ID=KPLB_05239;Name=ssb_2;gene=ssb_2;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P28044;locus_tag=KPLB_05239;product=Plasmid-derived single-stranded DNA-binding protein
+244288	244536	+	ID=KPLB_05240;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P75677;locus_tag=KPLB_05240;note=UPF0401 protein YkfF;product=hypothetical protein
+244606	246663	+	ID=KPLB_05241;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05241;product=hypothetical protein
+246708	247139	+	ID=KPLB_05242;Name=psiB;gene=psiB;inference=ab initio prediction:Prodigal:002006,similar to AA sequence:UniProtKB:P10031;locus_tag=KPLB_05242;product=Protein PsiB
+247136	247864	+	ID=KPLB_05243;inference=ab initio prediction:Prodigal:002006;locus_tag=KPLB_05243;product=hypothetical protein

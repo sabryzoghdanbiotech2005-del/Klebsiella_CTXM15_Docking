@@ -1,0 +1,22 @@
+     1	Protein id
+     2	Contig id
+     3	Start
+     4	Stop
+     5	Strand
+     6	Element symbol
+     7	Element name
+     8	Scope
+     9	Type
+    10	Subtype
+    11	Class
+    12	Subclass
+    13	Method
+    14	Target length
+    15	Reference sequence length
+    16	% Coverage of reference
+    17	% Identity to reference
+    18	Alignment length
+    19	Closest reference accession
+    20	Closest reference name
+    21	HMM accession
+    22	HMM description

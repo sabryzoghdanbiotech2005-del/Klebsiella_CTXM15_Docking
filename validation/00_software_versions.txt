@@ -1,0 +1,11 @@
+=== Software versions ===
+Date: Wed Sep 16 21:55:45 UTC 2026
+OS: Ubuntu 24.04.4 LTS
+Kernel: 6.18.33.2-microsoft-standard-WSL2
+Prokka: prokka 1.14.6
+AMRFinder: 4.2.7
+BLAST: blastn: 2.17.0+
+Vina: AutoDock Vina 1.1.2 (May 11, 2011)
+OpenBabel: Open Babel 3.1.1 -- Mar 31 2024 -- 06:39:03
+Python: Python 3.11.16
+Biopython: 1.88

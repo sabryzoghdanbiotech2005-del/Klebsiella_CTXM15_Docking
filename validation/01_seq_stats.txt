@@ -1,0 +1,6 @@
+file                                 format  type  num_seqs    sum_len    min_len    avg_len    max_len         Q1         Q2         Q3  sum_gap        N50  Q20(%)  Q30(%)  GC(%)
+Klebsiella pneumoniae.fasta          FASTA   DNA          1  5,295,264  5,295,264  5,295,264  5,295,264  2,647,632  5,295,264  2,647,632        0  5,295,264       0       0  57.48
+Plasmid Klebsiella pneumoniae.fasta  FASTA   DNA          1    317,772    317,772    317,772    317,772    158,886    317,772    158,886        0    317,772       0       0  50.78
+klebsiella_complete.fasta            FASTA   DNA          2  5,613,036    317,772  2,806,518  5,295,264    317,772  2,806,518  5,295,264        0  5,295,264       0       0   57.1
+>CP129403.1 Klebsiella pneumoniae subsp. pneumoniae strain Kp3739_LBHALD chromosome, complete genome
+>CP129404.1 Klebsiella pneumoniae subsp. pneumoniae strain Kp3739_LBHALD plasmid p_Kp3739_LBHALD, complete sequence

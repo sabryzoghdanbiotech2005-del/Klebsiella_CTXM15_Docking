@@ -1,0 +1,6 @@
+RMSD = 0.833484 Å
+GalaxyDock2-DL Score = 5.549
+Method: Covalent Docking (GalaxyCDock2-DL)
+Receptor: 4HBU (CTX-M-15)
+Ligand: Avibactam
+Covalent Residue: SER70 (OG)

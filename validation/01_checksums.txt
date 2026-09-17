@@ -1,0 +1,4 @@
+bf875bfa3fd4861cd0df510973704645  Klebsiella pneumoniae.fasta
+529b5bf35e0fa41491b86611107fa80c  Plasmid Klebsiella pneumoniae.fasta
+88ddae0da6d6143406f25730e0c52ffb  ctxm15.fasta
+119f03e2809821a6d18251610b0dcde5  klebsiella_complete.fasta

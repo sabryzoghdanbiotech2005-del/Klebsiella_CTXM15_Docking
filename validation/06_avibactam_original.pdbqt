@@ -1,0 +1,52 @@
+REMARK  Name = validation/06_avibactam_original.pdb
+REMARK  7 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA_5  and  C_6
+REMARK    2  A    between atoms: CAO_11  and  NAK_12
+REMARK    3  A    between atoms: NAK_12  and  OAL_13
+REMARK    4  A    between atoms: OAL_13  and  SAR_14
+REMARK    5  A    between atoms: SAR_14  and  OAD_15
+REMARK    6  A    between atoms: SAR_14  and  OAE_16
+REMARK    7  A    between atoms: SAR_14  and  OAG_17
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  OAC NXL A 301      -4.615  -3.872  12.851  0.00  0.00    -0.265 OA
+ATOM      2  CAN NXL A 301      -5.505  -3.208  13.348  0.00  0.00    +0.303 C 
+ATOM      3  N   NXL A 301      -5.838  -1.954  12.985  0.00  0.00    -0.264 N 
+ATOM      4  CAJ NXL A 301      -7.219  -1.483  13.144  0.00  0.00    +0.114 C 
+ATOM      5  CA  NXL A 301      -5.142  -1.448  11.774  0.00  0.00    +0.156 C 
+ATOM      6  CB  NXL A 301      -5.994  -1.666  10.522  0.00  0.00    +0.031 C 
+ATOM      7  CAH NXL A 301      -7.444  -1.279  10.672  0.00  0.00    +0.024 C 
+ATOM      8  CAO NXL A 301      -8.052  -1.868  11.924  0.00  0.00    +0.125 C 
+ENDROOT
+BRANCH   5   9
+ATOM      9  C   NXL A 301      -4.709  -0.008  11.955  0.00  0.00    +0.279 C 
+ATOM     10  O   NXL A 301      -5.146   0.774  12.779  0.00  0.00    -0.270 OA
+ATOM     11  NAA NXL A 301      -3.746   0.357  11.122  0.00  0.00    -0.086 N 
+ATOM     12  H   NXL A 301      -3.400  -0.283  10.459  0.00  0.00    +0.000 HD
+ATOM     13  H   NXL A 301      -3.377   1.269  11.166  0.00  0.00    +0.000 HD
+ENDBRANCH   5   9
+BRANCH   8  14
+ATOM     14  NAK NXL A 301      -7.958  -3.366  11.874  0.00  0.00    -0.055 NA
+ATOM     15  H   NXL A 301      -6.999  -3.645  11.667  0.00  0.00    +0.000 HD
+BRANCH  14  16
+ATOM     16  OAL NXL A 301      -8.824  -3.830  10.853  0.00  0.00    -0.119 OA
+BRANCH  16  17
+ATOM     17  SAR NXL A 301      -8.258  -5.223  10.321  0.00  0.00    +0.151 S 
+BRANCH  17  18
+ATOM     18  OAD NXL A 301      -9.330  -5.599   9.417  0.00  0.00    -0.041 OA
+ATOM     19  H   NXL A 301      -9.342  -4.993   8.660  0.00  0.00    +0.000 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  OAE NXL A 301      -7.006  -5.034   9.718  0.00  0.00    -0.041 OA
+ATOM     21  H   NXL A 301      -7.104  -4.461   8.941  0.00  0.00    +0.000 HD
+ENDBRANCH  17  20
+BRANCH  17  22
+ATOM     22  OAG NXL A 301      -8.160  -6.074  11.488  0.00  0.00    -0.041 OA
+ATOM     23  H   NXL A 301      -7.818  -6.943  11.226  0.00  0.00    +0.000 HD
+ENDBRANCH  17  22
+ENDBRANCH  16  17
+ENDBRANCH  14  16
+ENDBRANCH   8  14
+TORSDOF 7

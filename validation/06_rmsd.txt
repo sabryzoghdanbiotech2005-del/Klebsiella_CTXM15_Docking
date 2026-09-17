@@ -1,0 +1,1 @@
+RMSD validation/06_avibactam_original.pdb:validation/06_avibactam_redocked_pose1.pdb 3.21583

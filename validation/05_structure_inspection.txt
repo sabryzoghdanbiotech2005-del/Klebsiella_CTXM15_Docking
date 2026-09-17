@@ -1,0 +1,54 @@
+=== Chains present ===
+A
+
+=== HETATM residues (ligands, ions, buffer) ===
+    329 HOH
+     37 XR3
+     20 SO4
+     20 DMS
+      3  NA
+      2  CL
+
+=== Alternate location indicators ===
+    288 A
+    311 B
+     60 C
+
+=== Residues with altlocs ===
+ALA A  76
+ALA A 270
+ARG A 191
+ARG A 204
+ARG A 273
+ARG A 274
+ASN A  89
+ASN A 192
+ASP A  29
+ASP A 275
+GLN A  31
+GLN A  40
+GLN A 188
+GLU A  87
+GLY A 238
+LEU A  90
+LYS A  82
+LYS A  83
+LYS A 269
+MET A  75
+PHE A 263
+PRO A  88
+SER A  41
+SER A  86
+SER A 147
+SER A 237
+SER A 272
+THR A 189
+THR A 261
+TYR A 262
+VAL A  30
+VAL A 260
+
+=== Resolution ===
+REMARK   2 RESOLUTION.    0.85 ANGSTROMS.                                       
+REMARK   3   RESOLUTION RANGE HIGH (ANGSTROMS) : 0.85                           
+REMARK   3   RESOLUTION RANGE LOW  (ANGSTROMS) : 31.72                          
